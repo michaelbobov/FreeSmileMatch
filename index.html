@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Get a free dental cleaning with our dental hygiene students. Schedule your appointment at a local dental school near you.">
-    <meta name="keywords" content="free dental cleaning, affordable dental care, dental hygiene students, dental clinic">
+    <meta name="description" content="Get a free dental cleaning with our dental hygiene students. Our students are supervised by experienced professionals to ensure top-quality care. Schedule your appointment at a local dental school near you.">
+    <meta name="keywords" content="free dental cleaning, affordable dental care, dental hygiene students, dental clinic, expert dental care, supervised dental students">
+    <meta name="robots" content="index, follow">
     <title>Free Dental Cleanings | Affordable Dental Care</title>
     <style>
         body {
@@ -14,24 +15,60 @@
             background-color: #f4f4f4;
             color: #333;
         }
+        .header {
+            background-color: #007bff;
+            padding: 10px 0;
+            text-align: center;
+            color: #fff;
+        }
+        .header nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .header nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 22px; /* Increased font size for better visibility */
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+        .header nav a:hover {
+            background-color: #0056b3;
+        }
+        .logo {
+            max-width: 120px; /* Adjust size as needed */
+            height: auto;
+            border-radius: 50%; /* Circular shape */
+            border: 5px solid #fff; /* White border to blend with the background */
+        }
         .container {
-            max-width: 800px;
+            max-width: 1200px; /* Increased width for a wider layout */
             margin: 0 auto;
             padding: 20px;
             background-color: #fff;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            text-align: center;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            text-align: center; /* Centralized text alignment */
+        }
+        h1, .caption {
+            color: #007bff; /* Blue color for titles and captions */
         }
         h1 {
-            color: #007bff;
+            font-size: 32px; /* Increased font size for better visibility */
+            margin-bottom: 20px;
         }
         p {
-            font-size: 16px;
+            font-size: 18px;
             line-height: 1.6;
+            margin-bottom: 20px;
+            max-width: 800px; /* Limit text width for better readability */
+            margin-left: auto;
+            margin-right: auto;
         }
         .schedule-button {
             display: inline-block;
-            padding: 10px 20px;
+            padding: 12px 24px;
             font-size: 18px;
             color: #fff;
             background-color: #007bff;
@@ -42,15 +79,89 @@
         .schedule-button:hover {
             background-color: #0056b3;
         }
+        .image-container {
+            margin: 30px 0; /* Increased margin for more spacing */
+            text-align: center;
+            overflow: hidden;
+            position: relative; /* Added position relative to adjust image positioning */
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+            max-height: 400px; /* Fixed height for horizontal focus */
+            object-fit: cover; /* Ensures the image covers the container */
+        }
+        .image-container:first-of-type img {
+            object-position: center; /* Center the crop for the first image */
+        }
+        .image-container:last-of-type img {
+            object-position: center; /* Focuses on the upper part of the image */
+            margin-top: -20px; /* Moves the second image up */
+        }
+        .caption {
+            font-size: 20px;
+            margin-top: 20px; /* Reduced margin for better spacing */
+            color: #007bff;
+        }
+        .text-block {
+            margin-bottom: 30px;
+        }
+        .cta {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 20px;
+            color: #007bff;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #007bff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .cta-button:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
+    <header class="header">
+        <img src="Images/Designer (10).png" alt="Logo" class="logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="blog.html">Blog</a>
+        </nav>
+    </header>
     <div class="container">
-        <h1>Get Your Free Dental Cleaning Today!</h1>
-        <p>Welcome to our platform where we connect you with dental hygiene students who are eager to help you get a free dental cleaning. Our goal is to make dental care accessible and affordable for everyone.</p>
-        <p>Click the button below to schedule your free cleaning at a local dental school near you.</p>
+        <h1>Schedule Your Free Dental Cleaning Today!</h1>
+        <div class="text-block">
+            <p>Welcome to Free Dental Student Care! Our platform is dedicated to connecting you with dental hygiene students who are excited to offer you a free dental cleaning. We believe that everyone deserves access to quality dental care, and our mission is to make it both accessible and affordable. By working with students eager to gain hands-on experience, we provide a valuable service to the community while helping students complete their clinical requirements. Explore our platform today and enjoy top-notch dental care at no cost to you.</p>
+            <p>Schedule your free cleaning at a local dental school near you.</p>
+        </div>
         <a href="https://mvc.edu/community/dental-clinic.php" class="schedule-button">Schedule Your Free Cleaning</a>
-        <p>Our dental students are here to provide quality care while gaining valuable experience. Take advantage of this opportunity and get your smile shining!</p>
+        
+        <div class="image-container">
+            <img src="Images/filip-rankovic-grobgaard-rm7Mgu33tHU-unsplash.jpg" alt="Patient getting teeth cleaned">
+            <div class="caption">Experience Professional Care with Our Students</div>
+        </div>
+
+        <div class="text-block">
+            <p>Our students are supervised by experienced dental professionals to ensure you receive expert care while they gain valuable experience. Take advantage of this opportunity and get your smile shining!</p>
+        </div>
+        
+        <div class="image-container">
+            <img src="Images/autumn-goodman-vTL_qy03D1I-unsplash.jpg" alt="Smiling person">
+            <div class="caption">Smile with Confidence</div>
+        </div>
+
+        <!-- Added CTA section below "Smile with Confidence" -->
+        <div class="text-block">
+            <p class="cta">Don’t wait, get your cleaning now!</p>
+            <a href="https://mvc.edu/community/dental-clinic.php" class="cta-button">Schedule Your Free Cleaning</a>
+        </div>
     </div>
 </body>
 </html>
